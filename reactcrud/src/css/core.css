@@ -1,0 +1,116 @@
+button {
+  cursor: pointer;
+}
+nav {
+  background-color: black;
+  height: 50px;
+}
+nav div.left,
+nav div.right {
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+  display: inline-block;
+  font-size: xx-large;
+  padding: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+nav div.left a,
+nav div.right a {
+  color: white;
+  text-decoration: none;
+}
+nav div.left:hover,
+nav div.right:hover {
+  border-bottom-color: yellow;
+}
+table {
+  border: 2px solid black;
+  width: 300px;
+  box-shadow: 2px 2px;
+}
+table tr {
+  padding: 3px;
+}
+table tr td {
+  cursor: default;
+}
+table thead tr td {
+  font-size: xx-large;
+  padding: 5px;
+  text-shadow: 2px 1px 3px #000000;
+}
+table tbody tr td {
+  transition: font-size 2s;
+}
+table tbody tr td:hover {
+  font-size: xx-large;
+}
+table tbody tr td button {
+  border-radius: 5px;
+  border: 1px solid black;
+}
+table tbody .form-button-tr {
+  display: inline-flex;
+}
+@keyframes formAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes forminpuy {
+  from {
+    left: -435px;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes FormButton {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(150deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+.addUser {
+  width: 300px;
+  margin: 50px;
+}
+.addUser form {
+  width: 100px;
+  display: table-cell;
+  margin: 5px;
+}
+.addUser form label {
+  font-size: 20px;
+  animation-name: formAnim;
+  animation-duration: 5s;
+}
+.addUser form input {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  position: relative;
+  animation-name: forminpuy;
+  animation-duration: 5s;
+}
+.addUser form button {
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+}
+.addUser form button:hover {
+  animation-name: FormButton;
+  animation-duration: 3s;
+}
